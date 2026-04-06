@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NeatNest — India's smart digital waste collection and management system." />
+  <title>NeatNest — Smart Waste Management</title>
+
+  <!-- Logo: add your logo file to assets/img/logo.png -->
+  <link rel="icon" href="assets/img/logo.png" type="image/png" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet" href="assets/css/landing.css" />
+</head>
+<body>
+
+  <!-- ═══════════ NAVBAR ═══════════ -->
+  <nav class="navbar" id="mainNav">
+    <div class="nav-container">
+
+      <a href="index.html" class="nav-logo">
+        <!-- LOGO PLACEHOLDER — replace with your logo image -->
+        <div class="logo-placeholder">🗑️</div>
+        <span class="logo-text">Neat<span>Nest</span></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#features"     class="nav-link">Features</a></li>
+        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="#pricing"      class="nav-link">Pricing</a></li>
+        <li><a href="#contact"      class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="pages/login.html"    class="btn btn-outline btn-sm">Log In</a>
+        <a href="pages/register.html" class="btn btn-primary btn-sm">Get Started</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu hidden" id="mobileMenu">
+      <a href="#features"     class="mobile-link">Features</a>
+      <a href="#how-it-works" class="mobile-link">How It Works</a>
+      <a href="#pricing"      class="mobile-link">Pricing</a>
+      <a href="#contact"      class="mobile-link">Contact</a>
+      <div class="mobile-actions">
+        <a href="pages/login.html"    class="btn btn-outline">Log In</a>
+        <a href="pages/register.html" class="btn btn-primary">Get Started Free</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-dot"></span>
+        🇮🇳 India's Smart Waste Management Platform
+      </div>
+
+      <h1 class="hero-title">
+        A Clean Home<br />
+        Builds a Clean<br />
+        <span class="hero-highlight">Nation</span>
+      </h1>
+
+      <p class="hero-desc">
+        NeatNest connects Indian households, waste collectors, and municipal
+        bodies. Pay bills online, schedule pickups, and manage waste
+        collection — all in one platform. Serving districts across India.
+      </p>
+
+      <div class="hero-actions">
+        <a href="pages/register.html" class="btn-hero-primary">Get Started Free →</a>
+        <a href="pages/login.html"    class="btn-hero-ghost">Sign In</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="stat-number">30K+</div>
+          <div class="stat-lbl">Active Households</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="hero-stat">
+          <div class="stat-number">300+</div>
+          <div class="stat-lbl">Drivers Registered</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="hero-stat">
+          <div class="stat-number">20+</div>
+          <div class="stat-lbl">Districts Covered</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating UI cards (decorative) -->
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hv-card hv-main anim-float">
+        <div class="hv-icon">🏠</div>
+        <div>
+          <div class="hv-label">Monthly Bill</div>
+          <div class="hv-value">₹249</div>
+          <span class="hv-badge">Paid ✓</span>
+        </div>
+      </div>
+      <div class="hv-card anim-float2">
+        <div class="hv-icon">🗓️</div>
+        <div class="hv-label">Next Pickup</div>
+        <div class="hv-value" style="font-size:1rem">Tuesday</div>
+      </div>
+      <div class="hv-card anim-float3">
+        <div class="hv-icon">🚛</div>
+        <div class="hv-label">Trucks Live</div>
+        <div class="hv-value">12</div>
+      </div>
+      <div class="hv-card hv-wide anim-float2">
+        <div class="hv-prog-header">
+          <span>Today's Coverage</span>
+          <span class="hv-pct">78%</span>
+        </div>
+        <div class="hv-prog-bar">
+          <div class="hv-prog-fill" style="width:0%"></div>
+        </div>
+        <div class="hv-prog-sub">8 of 10 zones completed</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CITIES STRIP ═══════════ -->
+  <div class="cities-strip">
+    <span class="strip-label">🇮🇳 Serving:</span>
+    <div class="strip-cities">
+      <span>Srinagar</span>
+      <span>Ganderbal</span>
+      <span>Baramulla</span>
+      <span>Kupwara</span>
+      <span>Bandipora</span>
+      <span>Anantnag</span>
+      <span>Pulwama</span>
+      <span>Shopian</span>
+      <span>+10 more districts</span>
+    </div>
+  </div>
+
+  <!-- ═══════════ FEATURES ═══════════ -->
+  <section class="features-section" id="features">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="tag">Complete Solution</div>
+        <h2>One App, Three Modules</h2>
+        <p>Designed for every stakeholder in India's waste management
+          ecosystem — residents, drivers, and administrators.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card fc-green reveal">
+          <span class="feature-icon">💳</span>
+          <h3>UPI & Online Bill Payment</h3>
+          <p>Pay via UPI, Net Banking, Credit/Debit Card. Supports PhonePe,
+            GPay, Paytm and all major Indian wallets.</p>
+        </div>
+        <div class="feature-card fc-orange reveal">
+          <span class="feature-icon">🗓️</span>
+          <h3>Collection Schedule</h3>
+          <p>Know exactly when the waste truck arrives. Calendar with
+            admin-assigned pickup dates highlighted clearly.</p>
+        </div>
+        <div class="feature-card fc-blue reveal">
+          <span class="feature-icon">🧾</span>
+          <h3>Digital Receipts</h3>
+          <p>Instant GST-compliant digital receipts after every payment.
+            Download as PDF or share via WhatsApp instantly.</p>
+        </div>
+        <div class="feature-card fc-purple reveal">
+          <span class="feature-icon">📋</span>
+          <h3>Special Truck Booking</h3>
+          <p>Book a truck for bulk waste, renovation debris, or special
+            cleanups at the best available rates.</p>
+        </div>
+        <div class="feature-card fc-red reveal">
+          <span class="feature-icon">🔔</span>
+          <h3>Arrival Notifications</h3>
+          <p>Get instant push notifications on your phone when the
+            waste collector arrives at your gate.</p>
+        </div>
+        <div class="feature-card fc-teal reveal">
+          <span class="feature-icon">📊</span>
+          <h3>Admin Control Panel</h3>
+          <p>Municipal authorities get full visibility — users, payments,
+            routes, schedules, and performance analytics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ HOW IT WORKS ═══════════ -->
+  <section class="how-section" id="how-it-works">
+    <div class="section-inner">
+      <div class="section-header light">
+        <div class="tag" style="color:#7de8b0">Simple Process</div>
+        <h2>How NeatNest Works</h2>
+        <p>From registration to scheduled pickup in just a few simple steps.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step reveal">
+          <div class="step-number">1</div>
+          <h3>Register Your Home</h3>
+          <p>Sign up with your mobile number and address. Admin reviews
+            and activates your account.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-number">2</div>
+          <h3>Admin Assigns Schedule</h3>
+          <p>Admin assigns your pickup dates and times. You'll see them
+            highlighted on your calendar.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-number">3</div>
+          <h3>Pay Monthly Bill</h3>
+          <p>Admin generates your bill. Pay via UPI or card in seconds.
+            Get a GST receipt instantly.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-number">4</div>
+          <h3>Get Notified</h3>
+          <p>Receive a push notification the moment the driver arrives
+            at your gate — never miss a pickup.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ PRICING ═══════════ -->
+  <section class="pricing-section" id="pricing">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="tag">Affordable Plans</div>
+        <h2>Transparent Indian Pricing</h2>
+        <p>All prices inclusive of 18% GST. No hidden charges. Cancel anytime.</p>
+      </div>
+      <div class="pricing-grid">
+
+        <div class="pricing-card reveal">
+          <div class="plan-name">Basic</div>
+          <div class="plan-price">₹149<span>/month</span></div>
+          <p class="plan-desc">Ideal for 1–2 member households</p>
+          <ul class="plan-features">
+            <li>Weekly 1× collection</li>
+            <li>Online bill payment (UPI/Card)</li>
+            <li>Digital receipt on WhatsApp</li>
+            <li>Schedule notifications</li>
+          </ul>
+          <a href="pages/register.html" class="btn btn-outline" style="width:100%">Get Started</a>
+        </div>
+
+        <div class="pricing-card featured reveal">
+          <div class="popular-badge">Most Popular ⭐</div>
+          <div class="plan-name">Standard</div>
+          <div class="plan-price">₹249<span>/month</span></div>
+          <p class="plan-desc">Best for families of 4–6</p>
+          <ul class="plan-features">
+            <li>Twice-weekly collection</li>
+            <li>Priority scheduling</li>
+            <li>Special truck booking</li>
+            <li>WhatsApp reminders</li>
+            <li>Recycling tracking</li>
+          </ul>
+          <a href="pages/register.html" class="btn-featured">Get Started</a>
+        </div>
+
+        <div class="pricing-card reveal">
+          <div class="plan-name">Premium</div>
+          <div class="plan-price">₹499<span>/month</span></div>
+          <p class="plan-desc">Businesses, offices &amp; societies</p>
+          <ul class="plan-features">
+            <li>Daily collection</li>
+            <li>Dedicated truck assigned</li>
+            <li>Bulk &amp; construction waste</li>
+            <li>GST invoice for businesses</li>
+            <li>24/7 priority support</li>
+          </ul>
+          <a href="pages/register.html" class="btn btn-outline" style="width:100%">Get Started</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CTA ═══════════ -->
+  <section class="cta-section" id="contact">
+    <div class="section-inner">
+      <div class="cta-inner">
+        <div class="tag" style="color:#7de8b0">Join NeatNest Today</div>
+        <h2>Cleaner Home, Cleaner India</h2>
+        <p>Join 50,000+ Indian households who have made waste management
+          effortless with NeatNest.</p>
+        <div class="cta-actions">
+          <a href="pages/register.html" class="btn-cta-main">Register Your Home</a>
+          <a href="pages/login.html"    class="btn btn-ghost">Already a member? Sign In</a>
+        </div>
+        <div class="app-pills">
+          <span class="app-pill">📱 Android App Coming Soon</span>
+          <span class="app-pill">🍎 iOS App Coming Soon</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <!-- LOGO PLACEHOLDER -->
+            <div class="logo-placeholder" style="background:rgba(255,255,255,.1);color:#7de8b0">🗑️</div>
+            <span class="logo-text">Neat<span>Nest</span></span>
+          </div>
+          <p>NeatNest is India's leading smart waste management platform.
+            We connect citizens, drivers, and municipalities for a
+            Swachh Bharat.</p>
+          <div class="footer-contact">
+            <div>📞 1800-XXX-XXXX (Toll Free)</div>
+            <div>📧 support@neatnest.in</div>
+            <div>📍 Registered in India</div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-btn">f</a>
+            <a href="#" class="social-btn">𝕏</a>
+            <a href="#" class="social-btn">📸</a>
+            <a href="#" class="social-btn">▶</a>
+            <a href="#" class="social-btn">💬</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="pages/login.html">User Portal</a></li>
+            <li><a href="pages/login.html">Driver App</a></li>
+            <li><a href="pages/login.html">Admin Panel</a></li>
+            <li><a href="#pricing">Bill Payments</a></li>
+            <li><a href="#features">Special Bookings</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About NeatNest</a></li>
+            <li><a href="#">Our Mission</a></li>
+            <li><a href="#">Swachh Bharat</a></li>
+            <li><a href="#">Press &amp; Media</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Support &amp; Legal</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">GST Information</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <hr class="footer-divider" />
+      <div class="footer-bottom">
+        <p>© 2025 NeatNest Technologies Pvt. Ltd. All rights reserved.</p>
+        <div class="footer-btm-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/utils.js"></script>
+<script src="assets/js/landing.js"></script>
+</body>
+</html>
