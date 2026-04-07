@@ -72,8 +72,8 @@
 .hero-stats    { display: flex; flex-wrap: wrap; align-items: center; }
 .hero-stat     { padding: 0 28px; }
 .hero-stat:first-child { padding-left: 0; }
-.hero-stat-val   { font-family: var(--font-display); font-size: 1.8rem; font-weight: 800; color: #fff; line-height: 1; }
-.hero-stat-lbl      { font-size: .73rem; color: rgba(255,255,255,.48); margin-top: 3px; }
+.hero-stat-val  { font-family: 'Baloo 2', sans-serif; font-size: 1.7rem; font-weight: 800; color: #fff; }
+.hero-stat-lbl     { font-size: .75rem; color: rgba(255,255,255,.5); } 
 .stat-divider  { width: 1px; height: 40px; background: rgba(255,255,255,.15); }
 
 /* Floating Cards */
