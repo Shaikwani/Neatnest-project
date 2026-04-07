@@ -69,12 +69,12 @@
 .btn-hero-ghost:hover { background: rgba(255,255,255,.20); }
 
 /* Hero stats */
-.hero-stats    { display: flex; flex-wrap: wrap; align-items: center; }
-.hero-stat     { padding: 0 28px; }
+.hero-stats { display: flex; flex-wrap: wrap; }
+.hero-stat { padding: 0 28px; }
 .hero-stat:first-child { padding-left: 0; }
-.hero-stat-val  { font-family: 'Baloo 2', sans-serif; font-size: 1.7rem; font-weight: 800; color: #fff; }
-.hero-stat-lbl     { font-size: .75rem; color: rgba(255,255,255,.5); } 
-.stat-divider  { width: 1px; height: 40px; background: rgba(255,255,255,.15); }
+.hero-stat-val { font-family: 'Baloo 2', sans-serif; font-size: 1.7rem; font-weight: 800; color: #fff; }
+.hero-stat-lbl { font-size: .75rem; color: rgba(255,255,255,.5); }
+.hero-stat-divider { width: 1px; background: rgba(255,255,255,.15); margin: 4px 0; }
 
 /* Floating Cards */
 .hero-visual { position: absolute; right: 64px; top: 50%; transform: translateY(-50%); display: grid; grid-template-columns: 1fr 1fr; gap: 14px; width: 360px; z-index: 2; }
