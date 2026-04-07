@@ -93,7 +93,7 @@
 .hv-prog-sub { font-size: .68rem; opacity: .5; margin-top: 6px; }
 .anim-float  { animation: float 8s ease-in-out infinite; }
 .anim-float2 { animation: float 8s ease-in-out infinite 1.5s; }
-.hv-card {
+.hv-center {
   display: flex;
   flex-direction: column;
   align-items: center;
