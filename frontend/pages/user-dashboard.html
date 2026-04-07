@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard — NeatNest</title>
+  <link rel="icon" href="../assets/img/logo.png" type="image/png" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="stylesheet" href="../assets/css/dashboard.css" />
+</head>
+<body>
+
+<div class="app-layout">
+
+  <!-- ═══════════ SIDEBAR ═══════════ -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <a href="user-dashboard.html" class="sidebar-logo">
+        <!-- LOGO PLACEHOLDER -->
+        <div class="sidebar-logo-placeholder">🗑️</div>
+        <span class="sidebar-logo-text">Neat<span>Nest</span></span>
+      </a>
+    </div>
+
+    <div class="sidebar-user">
+      <div class="sidebar-avatar" id="sidebarAvatar">U</div>
+      <div>
+        <div class="sidebar-user-name" id="sidebarName">Loading...</div>
+        <div class="sidebar-user-role" id="sidebarRole">Resident</div>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav" id="sidebarNav"></nav>
+
+    <div class="sidebar-footer">
+      <a href="#" class="nav-item" onclick="logout(); return false;">
+        <span class="nav-icon">🚪</span> Log Out
+      </a>
+    </div>
+  </aside>
+
+  <!-- ═══════════ MAIN ═══════════ -->
+  <div class="main-content">
+
+    <!-- Topbar -->
+    <header class="topbar">
+      <div class="topbar-left">
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <span class="topbar-title" id="topbarTitle">Dashboard</span>
+      </div>
+      <div class="topbar-right">
+        <button class="notif-btn" id="notifBtn" title="Notifications">
+          🔔
+          <span class="notif-dot" id="notifDot" style="display:none"></span>
+        </button>
+        <div class="avatar" id="topbarAvatar" style="cursor:pointer">U</div>
+      </div>
+    </header>
+
+    <!-- Page Content -->
+    <main class="page-content">
+
+      <!-- Welcome -->
+      <div class="page-header">
+        <h2 id="welcomeMsg">Welcome 👋</h2>
+        <p id="welcomeSub">Here's an overview of your waste management account</p>
+      </div>
+
+      <!-- Loading state -->
+      <div id="loadingState" style="text-align:center;padding:60px 0">
+        <div class="spinner"></div>
+        <p style="margin-top:16px;color:var(--muted);font-size:.9rem">Loading your dashboard...</p>
+      </div>
+
+      <!-- Dashboard content (hidden until loaded) -->
+      <div id="dashContent" class="hidden">
+
+        <!-- Stats Grid -->
+        <div class="stats-grid" id="statsGrid">
+          <!-- Filled by JS -->
+        </div>
+
+        <!-- Two column layout -->
+        <div class="grid-2">
+
+          <!-- Current Bill Card -->
+          <div>
+            <div class="section-title">📋 Current Bill</div>
+            <div id="billCard">
+              <!-- Filled by JS -->
+            </div>
+          </div>
+
+          <!-- Upcoming Pickups -->
+          <div>
+            <div class="section-title">📅 Upcoming Pickups</div>
+            <div id="upcomingPickups">
+              <!-- Filled by JS -->
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Recent Notifications -->
+        <div style="margin-top:24px">
+          <div class="section-title">🔔 Recent Notifications</div>
+          <div class="card">
+            <div class="card-body" style="padding:0" id="notifList">
+              <!-- Filled by JS -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="../assets/js/utils.js"></script>
+<script src="../assets/js/sidebar.js"></script>
+<script src="../assets/js/user-dashboard.js"></script>
+</body>
+</html>
