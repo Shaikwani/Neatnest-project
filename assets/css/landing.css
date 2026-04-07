@@ -180,6 +180,11 @@
 .footer-btm-links { display: flex; gap: 20px; flex-wrap: wrap; }
 .footer-btm-links a { font-size: .82rem; color: rgba(255,255,255,.38); transition: color .2s; }
 .footer-btm-links a:hover { color: var(--green-light); }
+.footer-logo-img {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+}
 
 /* ── Responsive landing ── */
 @media(max-width:1100px) {
