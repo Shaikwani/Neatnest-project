@@ -93,13 +93,6 @@
 .hv-prog-sub { font-size: .68rem; opacity: .5; margin-top: 6px; }
 .anim-float  { animation: float 8s ease-in-out infinite; }
 .anim-float2 { animation: float 8s ease-in-out infinite 1.5s; }
-.hv-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
 
 /* ── CITIES STRIP ── */
 .cities-strip  { background: var(--green-dark); color: rgba(255,255,255,.65); padding: 14px 48px; display: flex; align-items: center; gap: 20px; overflow: hidden; }
