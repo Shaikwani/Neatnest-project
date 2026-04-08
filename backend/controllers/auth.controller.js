@@ -33,13 +33,13 @@ async function register(req, res) {
 
     const [result] = await db.query(
       `INSERT INTO users (name, email, phone, password_hash, role, address, ward, city, pincode, status)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, 'pending')`,
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, 'active')`,
       [name.trim(), email.toLowerCase().trim(), phone.trim(), passwordHash, role, address, ward, city, pincode]
     );
 
     return res.status(201).json({
       success: true,
-      message: 'Account created. Pending admin approval.',
+      message: 'Account created successfully. You can login now.',
       userId: result.insertId,
     });
 
@@ -75,13 +75,13 @@ async function login(req, res) {
       return res.status(401).json({ success: false, message: 'Invalid email or password.' });
     }
 
-    if (user.status === 'pending') {
-      return res.status(403).json({
-        success: false,
-        message: 'Your account is pending admin approval.',
-        status: 'pending',
-      });
-    }
+    // if (user.status === 'pending') {
+    //   return res.status(403).json({
+    //     success: false,
+    //     message: 'Your account is pending admin approval.',
+    //     status: 'pending',
+    //   });
+    // }
 
     if (user.status === 'inactive') {
       return res.status(403).json({
